@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #0077b6;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header .logo p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #90e0ef;
+    color: #023e8a;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #023e8a;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #caf0f8;
+}
+
+.destinations .cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destinations .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.destinations .card img {
+    width: 100%;
+}
+
+.destinations .card h3 {
+    margin: 0.5rem 0;
+    color: #0077b6;
+}
+
+.destinations .card p {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Blog Section */
+.blog {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.blog article {
+    margin-bottom: 1.5rem;
+}
+
+.blog article a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog article a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Wanderlust Tales</h1>
+            <p>Explore the world, one step at a time</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to Wanderlust Tales</h2>
+            <p>Your go-to blog for travel inspiration and tips.</p>
+            <a href="#destinations" class="btn">Discover More</a>
+        </section>
+        <section id="destinations" class="destinations">
+            <h2>Top Destinations</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" alt="Beach">
+                    <h3>Maldives</h3>
+                    <p>Relax on the pristine beaches and enjoy crystal-clear waters.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" alt="Mountains">
+                    <h3>Swiss Alps</h3>
+                    <p>Experience breathtaking views and thrilling adventures.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" alt="City">
+                    <h3>Tokyo</h3>
+                    <p>Dive into a world of culture, cuisine, and neon lights.</p>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>5 Tips for Budget Travel</h3>
+                <p>Traveling on a budget doesn't have to be boring. Learn how to make the most of your trips without breaking the bank.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>How to Pack Light</h3>
+                <p>Overpacking is a thing of the past. Discover the secrets of packing light and traveling smart.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wanderlust Tales. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

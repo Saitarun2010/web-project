@@ -1,0 +1,7 @@
+.field{
+    margin: 10px;
+    padding: 10px;
+}
+input[type=text]{
+    border: solid 2px black;
+}

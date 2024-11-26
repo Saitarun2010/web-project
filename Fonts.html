@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            /* display: flex;
+            flex-direction: row-reverse; */
+        }
+        .names-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        .names-wrapper div:first-child{
+            width: 20%;
+            height: 400px;
+            display: flex;
+            align-items: center;/* vertical center*/
+            justify-content: center;/* horizontal center*/
+            border: solid 1px black;
+        }
+        .names-wrapper div:nth-child(2){
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="names-wrapper">
+        <div>the heading</div>
+        <div>fiery</div>
+        <div>virat kohli</div>    
+    </div>
+</body>
+</html>

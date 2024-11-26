@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .random{
+            width: 400px;
+            height: 300px;
+            background-color: blanchedalmond;
+            transition: background-color is  10s ease 2s;
+        }
+
+        .random:hover{
+            background-color: greenyellow;
+            border-radius:  100px;
+        }
+
+        .ease-out{
+            transition: width 2s ease-out;
+        }
+
+        .ease-in{
+            transition: width 2s ease-in;
+        }
+
+        .linear{
+            transition: width 2s linear;
+        }
+
+        .ease{
+            transform: width 2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class ="random"></div>
+</body>
+</html>
